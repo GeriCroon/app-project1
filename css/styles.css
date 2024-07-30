@@ -1,0 +1,111 @@
+/*  @import "fonts.css"; wie kann ich fonts hinzufügen? */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+.header /* why wird das nicht angezeigt? */ {
+  background-color: #4caf50;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* wlistet die elemente untereinander */
+  align-items: center;
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.app-title {
+  background-color: palevioletred;
+  color: rgb(25, 14, 177);
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.question-card {
+  background-color: rgb(228, 94, 194);
+  width: 90%;
+  max-width: 400px;
+  margin: 1rem 0;
+  padding: 1rem;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.question-card__question-text {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.question-card__toggle-answer {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.question-card__answer-text {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.question-card__tags {
+  margin-top: 1rem;
+}
+
+.question-card__tags {
+  display: inline-block;
+  background-color: #e0e0e0;
+  padding: 0.3rem 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.bookmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 30px;
+  background-color: #ffd700;
+  /* 
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%, 0% 0%); */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #d9b3df;
+  padding: 0.5rem 0;
+}
+
+.nav-item {
+  color: rgb(73, 11, 219);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* Highlight the option when hovered */
+.option:hover {
+  background-color: #dddddd;
+}
+
+/* Optional: Add a class for correct/incorrect answers (can be added with JavaScript) */
+.option.correct {
+  background-color: #0fe917; /* Light green for correct answer */
+}
+
+.option.incorrect {
+  background-color: #f0061e; /* Light red for incorrect answer */
+}

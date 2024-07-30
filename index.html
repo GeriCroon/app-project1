@@ -1,52 +1,136 @@
+<!-- ______________________BASIC BEGINNING _____________-->
 <!DOCTYPE html>
 <html lang="en">
+  <!-- ______________________Head with links _____________-->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- REMOVING:
+    <link rel="fonts" href="./css/fonts.css" />
+    <link rel="answer page" href="./answer.html" />
+    <link rel="home page" href="./home.html" />
+    <link rel="bookmark page" href="./bookmarks.html" />
+    <link rel="profile page" href="./profile.html" />
+    -->
   </head>
+<!-- ------------------- MAIN------------ -->
+  <main class="main-content">
 
+<!-- ------------------- HEADERRRR------------ -->
+    <header class="header">
+        <h1 class="app-title">THE FIRST AND ONLY Quiz APP - WHUIII</h1>
+      </header> 
+
+<!-- ------------------- Section question cards------------ -->
+    <section class="question-card">
+        <div class="bookmark"></div>
+        <h2 class="question-text">
+            What property flips the axes in flexbox?
+        </h2>
+        <button class="show-answer-btn">Show Answer</button>
+        <p class="answer-text hidden">
+            flex-direction
+        </p>
+        <ul class="tags-list">
+            <li class="tag">#html</li>
+            <li class="tag">#flexbox</li>
+            <li class="tag">#css</li>
+        </ul>
+    </section>
+
+    <section class="question-card">
+        <div class="bookmark"></div>
+        <h2 class="question-text">
+            Lorem Ipsum dolor sit?
+        </h2>
+        <button class="show-answer-btn">Show Answer</button>
+        <p class="answer-text hidden">
+            Answer goes here
+        </p>
+    </section>
+</main>
+<!-- ------------------- FOOTER------------ -->
+<footer class="footer">
+    <nav class="nav-bar">
+        <a href="#" class="nav-item active">
+            <img src="./img/house.png" alt="Home" class="nav-icon">
+            <span>Home</span>
+        </a>
+        <a href="#" class="nav-item">
+            <img src="./img/book-marked.png" alt="Bookmarks" class="nav-icon">
+            <span>Bookmarks</span>
+        </a>
+        <a href="#" class="nav-item">
+            <img src="./img/user-pen.png" alt="Profile" class="nav-icon">
+            <span>Profile</span>
+        </a>
+    </nav>
+</footer>
+
+
+</body>
+</html>
+
+  <!-- ______________________BODY_____________-
   <body>
-    <div class="app-title">THE FIRST AND ONLY Quiz APP - WHUIII</div>
+    <header class="header">
+      <h1 class="app-title">THE FIRST AND ONLY Quiz APP - WHUIII</h1>
+    </header>
 
-    <!-- question-card 1-->
-    <div class="question-card">
-      <div class="question-text">What property flips the axes in flexbox?</div>
+    question-card 1
+    <section class="question-card">
+      <img src="data:image3NC0yLjgjwvc3ZnPg==" />
+      <h2 class="question-card__question-text">
+        1. What property flips the axes in flexbox?
+      </h2>
 
-      <button class="toggle-answer">Show Answer</button>
-      <div class="answer-text" style="display: none">flex-direction</div>
+       Idea: <button class="toggle-answer">Show Answer</button> 
+       click answer to go to second page
+       TEST2:  <a href="second-page.html">Go to second page</a> 
+       <button class="toggle-answer" type="button" formaction="answer.html">Show Answer</button> 
 
-      <!-- tags -->
-      <div class="tags">
-        <span class="tag">#html</span>
-        <span class="tag">#flexbox</span>
-        <span class="tag">#css</span>
-      </div>
+       Now botton is working
+      <a class="question-card__toggle-answer" href="./answer.html">
+        <button class="question-card__toggle-answer">Show Answer</button>
+      </a>
+
+      <p class="question-card__answer-text" style="display: none">
+        flex-direction
+      </p>
+
+       tags 
+      <ul class="question-card__tags">
+        <li class="question-card__tags">#html</li>
+        <li class="question-card__tags">#flexbox</li>
+        <li class="question-card__tags">#css</li>
+      </ul>
       <div class="bookmark"></div>
-    </div>
+    </section>
 
-    <!-- question-card 2-->
+    notiz
+     question-card 2
     <div class="question-card">
       <div class="question-text">Lorem Ipsum dolor sit?</div>
       <button class="toggle-answer">Show Answer</button>
       <div class="answer-text" style="display: none">Answer goes here</div>
 
-      <!-- tags -->
+      tags 
       <div class="tags">
         <span class="tag">#html</span>
         <span class="tag">#css</span>
       </div>
       <div class="bookmark"></div>
     </div>
+    
 
-    <!-- footer mit HOME, Bookmark, Profile -->
-    <div class="footer">
-      <div class="nav-item">Home</div>
-      <div class="nav-item">Bookmarks</div>
-      <div class="nav-item">Profile</div>
-    </div>
-
-    <script src="scripts.js"></script>
+   footer mit HOME, Bookmark, Profile 
+    <nav class="footer">
+        <a href="index.html" class="nav-item">   <img src="./img/house.png" alt="Home"> HOME </a>
+        <a href="bookmarks.html" class="nav-item"> <img src="./img/book-marked.png"   alt="Bookmark" >   </a>Bookmarks</a>
+        <a href="profile.html" class="nav-item">   <img src="./img/user-pen.png"   alt="Profile" >Profile</a>
+    </nav>
   </body>
 </html>
+
+alt="Home"> HOME </a> -->
