@@ -1,14 +1,170 @@
-/*  @import "fonts.css"; wie kann ich fonts hinzufügen? */
+/* Basic reset and box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* Header styles */
+.header {
+  background-color: #f046c5;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-title {
+  font-size: 1.5rem;
+}
+
+/* Main content styles */
+.main-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Question card styles */
+.question-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bookmark {
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  width: 20px;
+  height: 30px;
+  background-color: #000000;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 100%, 50% 75%, 0% 100%, 0% 25%);
+}
+
+.question-text {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.show-answer-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.answer-text {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.tags-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #e0e0e0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 0.25rem;
+}
+
+/* -----------------------Shows where I am ------------- */
+.nav-item.active {
+  color: #007bff;
+}
+
+/* -----------------------Responsive design----------------- */
+@media (max-width: 600px) {
+  .main-content {
+    padding: 0.5rem;
+  }
+
+  .question-card {
+    padding: 0.75rem;
+  }
+
+  .question-text {
+    font-size: 1rem;
+  }
+
+  .show-answer-btn {
+    font-size: 0.9rem;
+  }
+
+  .tag {
+    font-size: 0.8rem;
+  }
+
+  .nav-item span {
+    font-size: 0.8rem;
+  }
+}
+
+/*  @import "fonts.css"; wie kann ich fonts hinzufügen? 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
-.header /* why wird das nicht angezeigt? */ {
+.header why wird das nicht angezeigt?  {
   background-color: #4caf50;
   width: 100%;
 }
 
 body {
   display: flex;
-  flex-direction: column; /* wlistet die elemente untereinander */
+  flex-direction: column;  wlistet die elemente untereinander 
   align-items: center;
   background-color: #f0f0f0;
   min-height: 100vh;
@@ -70,13 +226,7 @@ body {
 
 .bookmark {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 20px;
-  height: 30px;
-  background-color: #ffd700;
-  /* 
-  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%, 0% 0%); */
+  
 }
 
 .footer {
@@ -96,16 +246,15 @@ body {
   text-decoration: none;
 }
 
-/* Highlight the option when hovered */
+ Highlight the option when hovered 
 .option:hover {
   background-color: #dddddd;
 }
 
-/* Optional: Add a class for correct/incorrect answers (can be added with JavaScript) */
+ Optional: Add a class for correct/incorrect answers (can be added with JavaScript) 
 .option.correct {
-  background-color: #0fe917; /* Light green for correct answer */
+  background-color: #0fe917;  Light green for correct answer 
 }
 
 .option.incorrect {
-  background-color: #f0061e; /* Light red for incorrect answer */
-}
+  background-color: #f0061e;  Light red for incorrect answer */
